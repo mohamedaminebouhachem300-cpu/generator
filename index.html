@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ticket1.css">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="conference-ticket-generator-main/assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img src="conference-ticket-generator-main/assets/images/pattern-lines.svg" alt="" class="bg-lines">
+    <img src="conference-ticket-generator-main/assets/images/pattern-squiggly-line-top.svg" alt="" class="bg-squiggly-top">
+    <img src="conference-ticket-generator-main/assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="" class="bg-squiggly-bottom">
+    
+    <div class="main-container">
+        
+        <header>
+            <img src="conference-ticket-generator-main/assets/images/logo-full.svg" alt="Coding Conf" class="main-logo">
+        </header>
+
+        <main id="form-section">
+            <div class="hero-text">
+                <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+                <p>Secure your spot at next year's biggest coding conference.</p>
+            </div>
+        
+            <form id="ticket-form" novalidate>
+                <div class="form-group">
+                    <label for="avatar-upload">Upload Avatar</label>
+                    <div class="upload-container" id="drop-zone">
+                        <input type="file" id="avatar-upload" accept="image/png, image/jpeg" hidden>
+                        <div class="upload-content" id="upload-content">
+                            <div class="icon-box">
+                                <img src="conference-ticket-generator-main/assets/images/icon-upload.svg" alt="Upload Icon">
+                            </div>
+                            <p id="upload-text">Drag and drop or click to upload</p>
+                        </div>
+                    </div>
+                    <div class="hint-container">
+                        <img src="conference-ticket-generator-main/assets/images/icon-info.svg" alt="Info">
+                        <span class="hint-text">Upload your photo (JPG or PNG, max size: 500KB).</span>
+                        <span class="error-message hidden">Please enter a valid image.</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Full Name :</label>
+                    <input type="text" id ="name" placeholder="enter your name" required>
+                    <span class="error-message hidden">Please enter a valid name.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address :</label>
+                    <input type="text" id="email" placeholder="example@email.com" required>
+                    <span class="error-message hidden">Please enter a valid email.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="github">GitHub Username</label>
+                    <input type="text" id="github" placeholder="@yourusername" required>
+                    <span class="error-message hidden">Please enter a valid username.</span>
+                </div>
+
+                <button type="submit" class="submit-btn">Generate My Ticket</button>
+            </form>
+        </main>
+        
+        <section id="success-section" class="hidden">
+
+            <div class="hero-text">
+                <h1 class="congrats text">Congrats, <span id="display-name-header">Jonathan Lharbaoui</span>! YOUR TICKET IS READY .</h1>
+                <p class="email-notice">We've emailed your tocket to <span id="display-email">example@email.com</span>and will send updates in the run up to the event</p>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-content">
+                    <div class="ticket-header">
+                        <img src="conference-ticket-generator-main/assets/images/logo-full.svg" alt="Coding Conf">
+                        <p class="event-date">Jan 31, 2025 / Austin, TX</p>
+                    </div>
+
+                    <div class="ticket-footer">
+                        <div class="user-details">
+                            <img src="" alt="User Avatar" class="user-avatar" id="display-avatar">
+                            <div class="user-meta">
+                                <h2 id="display-name-ticket">Jonatan Kristof</h2>
+                                <div class="github-handle">
+                                    <img src="conference-ticket-generator-main/assets/images/icon-github.svg" alt="GitHub">
+                                    <span id="display-github">@jonatankristof0101</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-number">#00143</div>
+            </div>
+        </section>
+    </div>
+    <script src="ticket1.js"></script>
+</body>
+</html>
