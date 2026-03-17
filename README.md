@@ -50,7 +50,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image alt](https://github.com/mohamedaminebouhachem300-cpu/generator/blob/a239155343bf1fa45354a1ace77a3a3a5e7ff512/assets/screenshot.png)
 
 
 ### Links
