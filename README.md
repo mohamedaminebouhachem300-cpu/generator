@@ -56,7 +56,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/mohamedaminebouhachem300-cpu/generator)
-- Live Site URL: http://127.0.0.1:5500/index.html
+- Live Site URL: (https://mohamedaminebouhachem300-cpu.github.io/generator/)
 
 ## My process
 
