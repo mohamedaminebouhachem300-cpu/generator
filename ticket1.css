@@ -25,7 +25,7 @@
 body {
   font-family: var(--font-main);
   background-color: var(--neutral-900);
-  background-image: url('conference-ticket-generator-main/assets/images/background-desktop.png');
+  background-image: url('./assets/images/background-desktop.png');
   background-size: cover;
   background-position: center;
   color: var(--neutral-0);
@@ -169,7 +169,7 @@ input:focus {
   width: 100%;
   max-width: 550px;
   height: 280px;
-  background-image: url('conference-ticket-generator-main/assets/images/pattern-ticket.svg');
+  background-image: url('./assets/images/pattern-ticket.svg');
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
